@@ -6,6 +6,7 @@ $white: #FFFFFF;
     padding-bottom: 205px;
     height: fit-content;
     background-image: url('../img/head_img.png');
+    background-size: cover;
     background-repeat: no-repeat;
     &:before{
         content: '';
