@@ -1,0 +1,55 @@
+.footer {
+    padding: 27px 0;
+    background-color: #3D4050;
+}
+.footer__general-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    span {
+        font-family: 'Lato';
+        font-size: 13px;
+        color: #FFFFFF;
+    } 
+}
+.footer__copiright {
+    position: relative;
+    width: 306px;
+    &::after {
+        content: '';
+        background-image: url('/img/Vector-2.png');
+        min-width: 2px;
+        min-height: 18px;
+        right: -45px;
+        top: 1px;
+        position: absolute;
+    }
+}
+.footer__payment-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 396px;
+    position: relative;
+    &::after {
+        content: '';
+        background-image: url('/img/Vector-2.png');
+        min-width: 2px;
+        min-height: 18px;
+        right: -42px;
+        top: 3px;
+        position: absolute;
+    }
+}
+.footer__contacts {
+    width: 308px;
+}
+.footer__payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 27%;
+        span {
+            padding-top: 3px;
+        }
+}

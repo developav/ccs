@@ -140,7 +140,7 @@ h1 {
   margin: 0;
   padding: 0;
   width: 100%;
-  margin-bottom: 95px; }
+  margin-bottom: 85px; }
 
 .section__list-item {
   display: flex;
@@ -381,27 +381,9 @@ h1 {
   text-transform: uppercase; }
 
 /* Useless styles, just for demo styles */
-body {
-  font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
-  color: #7F8C9A;
-  background: #FCFDFD; }
-
-h1, h2 {
-  margin-bottom: 5px;
-  font-weight: normal;
-  text-align: center;
-  color: #aaa; }
-
-h2 {
-  margin: 5px 0 2em;
-  color: #1ABC9C; }
-
 form {
   width: 225px;
   margin: 0 auto;
-  text-align: center; }
-
-h2 + P {
   text-align: center; }
 
 .txtcenter {
@@ -416,5 +398,56 @@ h2 + P {
 .copy a {
   text-decoration: none;
   color: #1ABC9C; }
+
+.footer {
+  padding: 27px 0;
+  background-color: #3D4050; }
+
+.footer__general-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .footer__general-block span {
+    font-family: 'Lato';
+    font-size: 13px;
+    color: #FFFFFF; }
+
+.footer__copiright {
+  position: relative;
+  width: 306px; }
+  .footer__copiright::after {
+    content: '';
+    background-image: url("/img/Vector-2.png");
+    min-width: 2px;
+    min-height: 18px;
+    right: -45px;
+    top: 1px;
+    position: absolute; }
+
+.footer__payment-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 396px;
+  position: relative; }
+  .footer__payment-icon::after {
+    content: '';
+    background-image: url("/img/Vector-2.png");
+    min-width: 2px;
+    min-height: 18px;
+    right: -42px;
+    top: 3px;
+    position: absolute; }
+
+.footer__contacts {
+  width: 308px; }
+
+.footer__payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 27%; }
+  .footer__payment span {
+    padding-top: 3px; }
 
 /*# sourceMappingURL=style.css.map */
