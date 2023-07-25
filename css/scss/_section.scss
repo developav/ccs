@@ -35,7 +35,6 @@ $white: #FFFFFF;
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    width: 100%; 
     margin-bottom: 85px; 
 }
 .section__list-item {
@@ -45,7 +44,6 @@ $white: #FFFFFF;
     align-items: center;
     position: relative;
     min-width: 213px;
-    margin-right: 26px;
     &:not(:last-child)::after{
         content: ' ';
         background-image: url('/img/more.png');
@@ -59,6 +57,9 @@ $white: #FFFFFF;
     }
     svg {
         margin-bottom: 20px;
+    }
+    &:not(:last-child){
+        margin-right: 26px;
     }
 }
 .section__list-description{

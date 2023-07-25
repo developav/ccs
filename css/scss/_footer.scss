@@ -43,13 +43,37 @@
 }
 .footer__contacts {
     width: 308px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .footer__payment {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 27%;
-        span {
-            padding-top: 3px;
-        }
+    span {
+        padding-top: 3px;
+    }
+}
+
+.footer__contacts-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    a {
+        font-size: 13px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    svg {
+        margin-right: 11px;
+    }
+}
+.footer__contacts-block {
+    &:nth-child(2){
+        margin-right: 3px;
+    }
 }

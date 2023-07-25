@@ -1,0 +1,105 @@
+$retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$breakpoint-laptop: 1200px;
+$breackpoint-tablet-large: 990px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 575px;
+
+@media (max-width: $breakpoint-laptop ){
+    .container {
+        width: 990px;
+    }
+    .section__list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .section__list-item {
+        &:not(:last-child)::after {
+           display: none;
+        }
+        &:not(:last-child) {
+            margin-right: 26px;
+            margin-bottom: 50px;
+        }
+    } 
+    .section__form-input-group {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        .section__form-wrapper {
+            width: 65%;
+            height: 48px;
+            margin-bottom: 50px; 
+        }
+        .section__form-input {
+            width: 63.5%;
+            height: 48px;
+            margin-bottom: 50px;
+        }
+    }
+    .section__form-upload-block {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 49px;
+        .section__form-progress {
+            width: 65%;
+            margin-right: 0;
+            margin-bottom: 50px;
+            &::before {
+                top: -40px;
+            }
+        }
+    }
+    .footer__general-block{
+        align-items: flex-start;
+        .footer__copiright{
+            width: 18%;
+        }
+        .footer__contacts {
+            width: 27%;
+        }
+        .footer__payment-icon {
+            justify-content: space-between;
+            width: 40%;
+            .footer__payment {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 27%;
+            }
+        }
+    }  
+}
+@media (max-width: $breackpoint-tablet-large ){
+    .container {
+        width: 760px;
+    }
+    .footer__general-block {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        .footer__copiright {
+            width: 41%;
+            &::after {
+                display: none;
+            }
+        }
+        .footer__payment-icon {
+            width: 59%;
+            margin-bottom: 20px;
+            &::after {
+                display: none;
+            }
+        }
+        .footer__contacts {
+            width: 38%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet ){
+    .container {
+        width: 575px;
+    }
+}
