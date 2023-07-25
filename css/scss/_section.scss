@@ -36,7 +36,7 @@ $white: #FFFFFF;
     margin: 0;
     padding: 0;
     width: 100%; 
-    margin-bottom: 84px; 
+    margin-bottom: 95px; 
 }
 .section__list-item {
     display: flex;
@@ -66,4 +66,10 @@ $white: #FFFFFF;
 }
 .section__list-description--last {
     padding-left: 27px;
+}
+.section__form-input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
