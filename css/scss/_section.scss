@@ -74,3 +74,30 @@ $white: #FFFFFF;
     justify-content: space-between;
     width: 100%;
 }
+#myProgress {
+    position: relative;
+    margin-right: auto;
+    width: 66%;
+    height: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+  }
+  
+.section__form-percent {
+    position: absolute;
+    right: 1px;
+    top: -36px;
+
+}
+  #myBar {
+    background-repeat: no-repeat;
+    width: 1%;
+    content: '';
+    position: absolute;
+    top: -10px;
+    height: 30px;
+    width: 30px;
+    background-image: url('/img/ring.png');
+    background-repeat: no-repeat;
+    background-position: right;
+  }
