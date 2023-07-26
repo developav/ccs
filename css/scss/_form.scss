@@ -6,31 +6,41 @@
     justify-content: center;
 }
 .section__form-input {
-    width: 30.2%;
+    width: 30.3%;
     max-height: 48px;
     padding-left: 10px;
     font-size: 18px;
 }
 .section__form-container {
   position: relative;
-  width: 370px;
+  width: 372px;
 } 
 .js .section__form-input-trigger {
-  display: block;
-  padding: 14px 45px;
-  background: #39D2B4;
-  color: #fff;
-  font-size: 1em;
-  transition: all .4s;
-  cursor: pointer;
+    display: block;
+    padding: 15px 4px 3px 30px;
+    background: #FFFFFF;
+    color: #272733;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 29px;
+    transition: all .4s;
+    cursor: pointer;
+    position: relative;
+    svg {
+      position: absolute;
+      top: 14px;
+      left: 96px;
+  }
 }
 .js .section__form-input-file{
-  position: absolute;
-  top: 0; left: 0;
-  width: 370px;
-  opacity: 0;
-  padding: 14px 0;
-  cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 370px;
+    opacity: 0;
+    padding: 13px 0;
+    cursor: pointer;
 }
 .js .isection__form-input-file:hover + .section__form-input-trigger,
 .js .isection__form-input-file:focus + .section__form-input-trigger,
@@ -52,7 +62,7 @@
   font-weight: bold;
 }
 .js .file-return:not(:empty):before {
-  content: "ПРИКРЕПИТЕ ФАЙЛ";
+  content: "ПРИКРЕПИТЬ ФАЙЛ";
   font-style: normal;
   font-weight: normal;
 }
@@ -61,8 +71,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    padding-top: 30px;
-    margin-bottom: 49px;
+    margin-bottom: 55px;
 }
 .section__form-progress {
     position: relative;
@@ -71,7 +80,7 @@
     &::before {
         content: 'Sed ut perspiciatis, unde omnis iste natus';
         position: absolute;
-        top: -25px;
+        top: -41px;
         left: 0px;
         font-size: 18px;
         font-family: lato;
@@ -83,6 +92,40 @@
     align-self: center;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+.section__form-input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 29px;
+}
+#myProgress {
+  position: relative;
+  margin-right: auto;
+  width: 66%;
+  height: 7px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.section__form-percent {
+  position: absolute;
+  right: 1px;
+  top: -42px;
+}
+#myBar {
+  background-repeat: no-repeat;
+  width: 1%;
+  content: '';
+  position: absolute;
+  top: -10px;
+  height: 30px;
+  width: 30px;
+  background-image: url('/img/ring.webp');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /* Useless styles, just for demo styles */

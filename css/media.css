@@ -36,6 +36,8 @@
       margin-bottom: 50px; }
       .section__form-upload-block .section__form-progress::before {
         top: -40px; }
+    .section__form-upload-block #myProgress {
+      margin-right: 0; }
 
   .footer__general-block {
     align-items: flex-start; }
@@ -180,6 +182,10 @@
   .section__list-item:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 50px; }
+
+  .js .section__form-input-trigger svg {
+    top: 13px;
+    left: 40px; }
 
   .section__form-progress::before {
     top: -45px;

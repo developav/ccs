@@ -13,9 +13,9 @@ button.addEventListener( "click", function( event ) {
    fileInput.focus();
    return false;
 });  
-// fileInput.addEventListener( "change", function( event ) {  
-//     the_return.innerHTML = this.value;  
-// }); 
+fileInput.addEventListener( "change", function( event ) {  
+    the_return.innerHTML = this.value;  
+}); 
 let progress = document.querySelector(".section__form-percent")
 let i = 0;
 function move() {

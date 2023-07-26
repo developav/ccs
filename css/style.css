@@ -26,17 +26,9 @@ h1 {
   position: relative;
   padding-bottom: 205px;
   height: fit-content;
-  background-image: url("../img/head_img.png");
+  background-image: url("../img/head_img.webp");
   background-size: cover;
   background-repeat: no-repeat; }
-  .header:before {
-    content: '';
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    background-color: #10101d;
-    opacity: 0.5;
-    z-index: 1; }
 
 .header__nav {
   display: flex;
@@ -55,8 +47,22 @@ h1 {
   min-width: 436px; }
 
 .header__group {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   margin-bottom: 106px;
   padding: 38px 0; }
+  .header__group::before {
+    content: '';
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #10101d;
+    opacity: 0.5;
+    z-index: 1; }
 
 .header__nav-item {
   list-style-type: none; }
@@ -66,14 +72,19 @@ h1 {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF; }
+  .header__nav-link:hover {
+    color: #43ABF0; }
 
 .header__block-description {
   max-width: 800px; }
 
 .header__head {
   margin-bottom: 88px;
+  padding-top: 204px;
   font-size: 48px;
   text-transform: uppercase; }
+  .header__head span {
+    color: #3E9CDC; }
 
 .header__text {
   margin: 0;
@@ -109,7 +120,7 @@ h1 {
   border: 1px solid #6F6D7B; }
 
 .section {
-  background-image: url("/img/bg_main.png");
+  background-image: url("/img/bg_main.webp");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -125,7 +136,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 30px; }
-    .section__block-description .section__head .section__head-green {
+    .section__block-description .section__head span {
       color: #3E9CDC;
       padding-left: 10px; }
   .section__block-description .section__description {
@@ -169,37 +180,6 @@ h1 {
 .section__list-description--last {
   padding-left: 27px; }
 
-.section__form-input-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%; }
-
-#myProgress {
-  position: relative;
-  margin-right: auto;
-  width: 66%;
-  height: 10px;
-  background-color: #FFFFFF;
-  border-radius: 10px; }
-
-.section__form-percent {
-  position: absolute;
-  right: 1px;
-  top: -36px; }
-
-#myBar {
-  background-repeat: no-repeat;
-  width: 1%;
-  content: '';
-  position: absolute;
-  top: -10px;
-  height: 30px;
-  width: 30px;
-  background-image: url("/img/ring.png");
-  background-repeat: no-repeat;
-  background-position: right; }
-
 .section__form-wrapper {
   position: relative;
   user-select: none;
@@ -228,6 +208,8 @@ h1 {
   -webkit-transition: background .3s linear;
   -o-transition: background .3s linear;
   transition: background .3s linear; }
+  .section__form-trigger span {
+    font-size: 18px; }
 
 .section__form-custom-options {
   position: absolute;
@@ -328,31 +310,39 @@ h1 {
   justify-content: center; }
 
 .section__form-input {
-  width: 30.2%;
+  width: 30.3%;
   max-height: 48px;
   padding-left: 10px;
   font-size: 18px; }
 
 .section__form-container {
   position: relative;
-  width: 370px; }
+  width: 372px; }
 
 .js .section__form-input-trigger {
   display: block;
-  padding: 14px 45px;
-  background: #39D2B4;
-  color: #fff;
-  font-size: 1em;
+  padding: 15px 4px 3px 30px;
+  background: #FFFFFF;
+  color: #272733;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 29px;
   transition: all .4s;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
+  .js .section__form-input-trigger svg {
+    position: absolute;
+    top: 14px;
+    left: 96px; }
 
 .js .section__form-input-file {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 370px;
   opacity: 0;
-  padding: 14px 0;
+  padding: 13px 0;
   cursor: pointer; }
 
 .js .isection__form-input-file:hover + .section__form-input-trigger,
@@ -374,7 +364,7 @@ h1 {
   font-weight: bold; }
 
 .js .file-return:not(:empty):before {
-  content: "ПРИКРЕПИТЕ ФАЙЛ";
+  content: "ПРИКРЕПИТЬ ФАЙЛ";
   font-style: normal;
   font-weight: normal; }
 
@@ -382,8 +372,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding-top: 30px;
-  margin-bottom: 49px; }
+  margin-bottom: 55px; }
 
 .section__form-progress {
   position: relative;
@@ -392,7 +381,7 @@ h1 {
   .section__form-progress::before {
     content: 'Sed ut perspiciatis, unde omnis iste natus';
     position: absolute;
-    top: -25px;
+    top: -41px;
     left: 0px;
     font-size: 18px;
     font-family: lato; }
@@ -403,6 +392,38 @@ h1 {
   align-self: center;
   font-size: 15px;
   text-transform: uppercase; }
+
+.section__form-input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 29px; }
+
+#myProgress {
+  position: relative;
+  margin-right: auto;
+  width: 66%;
+  height: 7px;
+  background-color: #FFFFFF;
+  border-radius: 10px; }
+
+.section__form-percent {
+  position: absolute;
+  right: 1px;
+  top: -42px; }
+
+#myBar {
+  background-repeat: no-repeat;
+  width: 1%;
+  content: '';
+  position: absolute;
+  top: -10px;
+  height: 30px;
+  width: 30px;
+  background-image: url("/img/ring.webp");
+  background-repeat: no-repeat;
+  background-position: right; }
 
 /* Useless styles, just for demo styles */
 form {
@@ -441,7 +462,7 @@ form {
   width: 306px; }
   .footer__copiright::after {
     content: '';
-    background-image: url("/img/Vector-2.png");
+    background-image: url("/img/Vector-2.webp");
     min-width: 2px;
     min-height: 18px;
     right: -45px;
@@ -456,7 +477,7 @@ form {
   position: relative; }
   .footer__payment-icon::after {
     content: '';
-    background-image: url("/img/Vector-2.png");
+    background-image: url("/img/Vector-2.webp");
     min-width: 2px;
     min-height: 18px;
     right: -42px;
@@ -621,6 +642,8 @@ form {
       margin-bottom: 50px; }
       .section__form-upload-block .section__form-progress::before {
         top: -40px; }
+    .section__form-upload-block #myProgress {
+      margin-right: 0; }
 
   .footer__general-block {
     align-items: flex-start; }
@@ -765,6 +788,10 @@ form {
   .section__list-item:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 50px; }
+
+  .js .section__form-input-trigger svg {
+    top: 13px;
+    left: 40px; }
 
   .section__form-progress::before {
     top: -45px;

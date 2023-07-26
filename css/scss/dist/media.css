@@ -46,6 +46,9 @@
   .section__form-upload-block .section__form-progress::before {
     top: -40px;
   }
+  .section__form-upload-block #myProgress {
+    margin-right: 0;
+  }
 
   .footer__general-block {
     align-items: flex-start;
@@ -98,5 +101,207 @@
 @media (max-width: 768px) {
   .container {
     width: 575px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 390px;
+  }
+
+  .header__nav-icon {
+    height: 21px;
+    width: 26px;
+    top: -8px;
+  }
+
+  .header__head {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  .header__text {
+    font-size: 18px;
+  }
+
+  .header__head-list {
+    margin-bottom: 20px;
+  }
+  .header__head-list .header__head-item {
+    font-size: 16px;
+  }
+
+  .header__button {
+    width: 140px;
+    font-size: 12px;
+  }
+
+  .header__button--order {
+    margin-right: 10px;
+  }
+
+  .header__logo-link svg {
+    width: 150px;
+  }
+
+  .section__block-description {
+    padding-top: 50px;
+  }
+  .section__block-description .section__head {
+    font-size: 25px;
+  }
+  .section__block-description .section__description {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .section__list-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+
+  .section__form-progress::before {
+    top: -45px;
+    left: 0px;
+    font-size: 14px;
+  }
+
+  .footer__general-block {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__general-block .footer__copiright {
+    width: 79%;
+  }
+  .footer__general-block .footer__copiright::after {
+    display: none;
+  }
+  .footer__general-block .footer__payment-icon {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__general-block .footer__payment-icon::after {
+    display: none;
+  }
+  .footer__general-block .footer__contacts {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .header__nav-icon {
+    height: 21px;
+    width: 26px;
+    top: -8px;
+  }
+
+  .mobile.header__nav-list-mobile {
+    left: -75px;
+  }
+
+  .header__head {
+    margin-bottom: 24px;
+    font-size: 25px;
+  }
+
+  .header__text {
+    font-size: 16px;
+  }
+
+  .header__head-list {
+    margin-bottom: 20px;
+  }
+  .header__head-list .header__head-item {
+    font-size: 14px;
+  }
+
+  .header__button {
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .header__button--order {
+    margin-right: 10px;
+  }
+
+  .section__block-description {
+    padding-top: 50px;
+  }
+  .section__block-description .section__head {
+    font-size: 20px;
+  }
+  .section__block-description .section__description {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .section__list-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+
+  .js .section__form-input-trigger svg {
+    top: 13px;
+    left: 40px;
+  }
+
+  .section__form-progress::before {
+    top: -45px;
+    left: 0px;
+    font-size: 14px;
+  }
+
+  .section__form-container {
+    width: 85%;
+  }
+  .section__form-container .section__form-input-file {
+    width: 85%;
+  }
+
+  .section__form-button {
+    width: 85%;
+    height: 48px;
+    align-self: center;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .footer__general-block {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__general-block .footer__copiright {
+    width: 95%;
+  }
+  .footer__general-block .footer__copiright::after {
+    display: none;
+  }
+  .footer__general-block .footer__copiright span {
+    font-size: 12px;
+  }
+  .footer__general-block .footer__payment-icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__general-block .footer__payment-icon::after {
+    display: none;
+  }
+  .footer__general-block .footer__payment-icon .footer__payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 37%;
+  }
+  .footer__general-block .footer__contacts {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

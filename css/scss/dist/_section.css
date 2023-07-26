@@ -1,5 +1,5 @@
 .section {
-  background-image: url("/img/bg_main.png");
+  background-image: url("/img/bg_main.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,7 +18,7 @@
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.section__block-description .section__head .section__head-green {
+.section__block-description .section__head span {
   color: #3E9CDC;
   padding-left: 10px;
 }
@@ -69,11 +69,4 @@
 
 .section__list-description--last {
   padding-left: 27px;
-}
-
-.section__form-input-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
 }

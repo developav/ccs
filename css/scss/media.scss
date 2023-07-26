@@ -50,6 +50,9 @@ $breackpoint-mobile-small: 400px;
                 top: -40px;
             }
         }
+        #myProgress {
+            margin-right: 0;
+        }
     }
     .footer__general-block{
         align-items: flex-start;
@@ -235,7 +238,10 @@ $breackpoint-mobile-small: 400px;
             margin-bottom: 50px;
         }
     }
-
+    .js .section__form-input-trigger svg {
+        top: 13px;
+        left: 40px;
+    }
     .section__form-progress {
         &::before {
             top: -45px;
