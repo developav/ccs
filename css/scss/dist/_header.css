@@ -29,6 +29,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 20;
   width: 100%;
   margin-bottom: 106px;
   padding: 38px 0;
