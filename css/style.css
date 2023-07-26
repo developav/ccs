@@ -157,7 +157,6 @@ h1 {
   flex-direction: column;
   list-style-type: none;
   align-items: center;
-  position: relative;
   min-width: 213px; }
   .section__list-item:not(:last-child)::after {
     content: ' ';
@@ -728,7 +727,7 @@ form {
   .section__form-progress::before {
     top: -45px;
     left: 0px;
-    font-size: 14px; }
+    font-size: 12px; }
 
   .footer__general-block {
     flex-direction: column-reverse;
@@ -802,6 +801,12 @@ form {
     width: 85%; }
     .section__form-container .section__form-input-file {
       width: 85%; }
+
+  .section__form-progress::before {
+    font-size: 8px; }
+
+  .section__form-percent {
+    font-size: 12px; }
 
   .section__form-button {
     width: 85%;

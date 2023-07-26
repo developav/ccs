@@ -162,7 +162,7 @@
   .section__form-progress::before {
     top: -45px;
     left: 0px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .footer__general-block {
@@ -260,6 +260,14 @@
   }
   .section__form-container .section__form-input-file {
     width: 85%;
+  }
+
+  .section__form-progress::before {
+    font-size: 8px;
+  }
+
+  .section__form-percent {
+    font-size: 12px;
   }
 
   .section__form-button {

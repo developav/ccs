@@ -42,7 +42,6 @@ $white: #FFFFFF;
     flex-direction: column;
     list-style-type: none;
     align-items: center;
-    position: relative;
     min-width: 213px;
     &:not(:last-child)::after{
         content: ' ';
