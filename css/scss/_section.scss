@@ -2,7 +2,7 @@ $blue: #43ABF0;
 $button_color: #3E9CDC;
 $white: #FFFFFF;
 .section {
-    background-image: url('/img/bg_main.webp');
+    background-image: url('../img/bg_main.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -46,7 +46,7 @@ $white: #FFFFFF;
     min-width: 213px;
     &:not(:last-child)::after{
         content: ' ';
-        background-image: url('/img/more.png');
+        background-image: url('../img/more.webp');
         background-repeat: no-repeat;
         font-size: 40px;
         width: 200px;

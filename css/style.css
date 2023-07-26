@@ -14,12 +14,12 @@ h1 {
 
 @font-face {
   font-family: 'Lato';
-  src: url("/fonts/Lato-Regular.woff");
+  src: url("../fonts/Lato-Regular.woff");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Lato';
-  src: url("/fonts/Lato-Bold.woff");
+  src: url("../fonts/Lato-Bold.woff");
   font-weight: 700;
   font-style: normal; }
 .header {
@@ -120,7 +120,7 @@ h1 {
   border: 1px solid #6F6D7B; }
 
 .section {
-  background-image: url("/img/bg_main.webp");
+  background-image: url("../img/bg_main.webp");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -161,7 +161,7 @@ h1 {
   min-width: 213px; }
   .section__list-item:not(:last-child)::after {
     content: ' ';
-    background-image: url("/img/more.png");
+    background-image: url("../img/more.webp");
     background-repeat: no-repeat;
     font-size: 40px;
     width: 200px;
@@ -421,7 +421,7 @@ h1 {
   top: -10px;
   height: 30px;
   width: 30px;
-  background-image: url("/img/ring.webp");
+  background-image: url("../img/ring.webp");
   background-repeat: no-repeat;
   background-position: right; }
 
@@ -462,7 +462,7 @@ form {
   width: 306px; }
   .footer__copiright::after {
     content: '';
-    background-image: url("/img/Vector-2.webp");
+    background-image: url("../img/Vector-2.webp");
     min-width: 2px;
     min-height: 18px;
     right: -45px;
@@ -477,7 +477,7 @@ form {
   position: relative; }
   .footer__payment-icon::after {
     content: '';
-    background-image: url("/img/Vector-2.webp");
+    background-image: url("../img/Vector-2.webp");
     min-width: 2px;
     min-height: 18px;
     right: -42px;

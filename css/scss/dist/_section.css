@@ -1,5 +1,5 @@
 .section {
-  background-image: url("/img/bg_main.webp");
+  background-image: url("../img/bg_main.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -47,7 +47,7 @@
 }
 .section__list-item:not(:last-child)::after {
   content: " ";
-  background-image: url("/img/more.png");
+  background-image: url("../img/more.webp");
   background-repeat: no-repeat;
   font-size: 40px;
   width: 200px;
