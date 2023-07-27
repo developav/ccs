@@ -17,6 +17,25 @@
   max-height: 48px;
   padding-left: 10px;
   font-size: 18px;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  transition: 0.3s background-color linear;
+  &::placeholder{
+    color: #272733;
+    transition: 0.3s color linear;
+  }
+  &:hover {
+    background-color: #42A9ED;
+    &::placeholder{
+      color: #FFFFFF;
+    }
+  }
+  &:focus{
+    background-color: #3D4050;
+  }
+  &:active{
+    background-color: #3D4050;
+  }
 }
 .section__form-container {
 position: relative;
@@ -49,13 +68,18 @@ width: 372px;
   opacity: 0;
   padding: 13px 0;
   cursor: pointer;
+  transition: 0.3s background linear;
+  &:hover{
+    background: #42A9ED;
+    color: #FFFFFF;
+  }
 }
 .js .isection__form-input-file:hover + .section__form-input-trigger,
 .js .isection__form-input-file:focus + .section__form-input-trigger,
 .js .section__form-input-trigger:hover,
 .js .section__form-input-trigger:focus {
-background: #34495E;
-color: #39D2B4;
+background: #42A9ED;
+color: #FFFFFF;
 }
 
 .file-return {
@@ -108,7 +132,16 @@ font-weight: normal;
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 15px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
   text-transform: uppercase;
+  transition: 0.3s border, background-color 0.3s,color .3s linear;
+  &:hover{
+    border: 1px solid #FFFFFF;
+    background-color: #42A9ED;
+    color: #FFFFFF;
+  }
 }
 
 .section__form-input-group {

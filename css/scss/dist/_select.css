@@ -1,5 +1,8 @@
 .section__form-wrapper {
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   width: 370px;
   height: 48px;
@@ -7,14 +10,26 @@
 
 .section__form-select {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  background: #121723;
 }
 
 .section__form-trigger {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 7px 0px 12px;
   font-size: 16px;
@@ -28,18 +43,28 @@
   -webkit-transition: background 0.3s linear;
   -o-transition: background 0.3s linear;
   transition: background 0.3s linear;
+  transition: color 0.3s linear;
 }
 .section__form-trigger span {
   font-size: 18px;
+}
+.section__form-trigger:hover {
+  background: #42A9ED;
+  color: #FFFFFF;
+}
+.section__form-trigger:focus {
+  background: #3D4050;
+}
+.section__form-trigger:active {
+  background: #3D4050;
 }
 
 .section__form-custom-options {
   position: absolute;
   display: block;
   top: 100%;
-  left: 0;
+  left: -1px;
   right: 0;
-  border: 1px solid #D2D5DD;
   border-radius: 10px;
   border-top: 0;
   background: #3D4050;
@@ -52,12 +77,16 @@
   z-index: 2;
 }
 
+.open__color {
+  color: #FFFFFF;
+  background-color: #3d4050;
+}
+
 .section__form-select.open .section__form-custom-options {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  overflow-y: scroll;
-  height: 200px;
+  height: 0px;
 }
 
 .section__form-custom-option {
@@ -66,7 +95,7 @@
   padding: 12px 12px 12px 12px;
   font-size: 16px;
   font-weight: 400;
-  color: #A1A6B4;
+  color: #FFFFFF;
   line-height: 16px;
   cursor: pointer;
   -webkit-transition: all 0.5s;
@@ -74,26 +103,13 @@
   transition: all 0.5s;
 }
 
-.section__form-custom-option:nth-child(1) {
-  border-bottom: 1px solid #D2D5DD;
-}
-
-.section__form-custom-option:nth-child(2) {
-  border-bottom: 1px solid #D2D5DD;
-}
-
-.section__form-custom-option:nth-child(3) {
-  border-bottom: 1px solid #D2D5DD;
-}
-
 .section__form-custom-option:hover {
   cursor: pointer;
-  background-color: #b2b2b2;
+  color: #42A9ED;
 }
 
 .section__form-custom-option .selected {
   color: #A1A6B4;
-  background-color: #3D4050;
 }
 
 .section__form-arrow {
@@ -108,28 +124,38 @@
   bottom: 0px;
   width: 0.1rem;
   height: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .section__form-arrow::before {
   left: -2px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   background-color: #394a6d;
 }
 
 .section__form-arrow::after {
   left: 5px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #394a6d;
 }
 
 .open .section__form-arrow::before {
   left: -2px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .open .section__form-arrow::after {
   left: 5px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -138,4 +164,43 @@
   background-color: #ff6536;
 }
 
-/*# sourceMappingURL=style.css.map */
+.scrollable {
+  overflow-y: scroll;
+  scrollbar-color: #0A4C95 #C2D2E4;
+}
+
+.scrollable {
+  overflow: auto;
+  width: 100%;
+  height: 228px;
+}
+.scrollable select {
+  width: 100%;
+  height: 228px;
+  border: none;
+  background: #272733;
+}
+
+.selected {
+  background-color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 53px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  background: #ccc;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #3D4050;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 15px;
+  border-radius: 25px;
+  background: #3E9CDC;
+}

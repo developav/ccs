@@ -67,6 +67,13 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+            a {
+                transition: color 0.3s linear;
+                &:hover {
+                    color: #43ABF0;
+                }
+            }
+           
 }
 .footer__payment {
     display: -webkit-box;

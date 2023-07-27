@@ -2,8 +2,15 @@
 .section__form {
   margin-bottom: 155px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -12,6 +19,25 @@
   max-height: 48px;
   padding-left: 10px;
   font-size: 18px;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  transition: 0.3s background-color linear;
+}
+.section__form-input::placeholder {
+  color: #272733;
+  transition: 0.3s color linear;
+}
+.section__form-input:hover {
+  background-color: #42A9ED;
+}
+.section__form-input:hover::placeholder {
+  color: #FFFFFF;
+}
+.section__form-input:focus {
+  background-color: #3D4050;
+}
+.section__form-input:active {
+  background-color: #3D4050;
 }
 
 .section__form-container {
@@ -28,9 +54,10 @@
   border: 1px solid black;
   border-radius: 5px;
   height: 29px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
   cursor: pointer;
-  position: relative;
 }
 .js .section__form-input-trigger svg {
   position: absolute;
@@ -46,14 +73,19 @@
   opacity: 0;
   padding: 13px 0;
   cursor: pointer;
+  transition: 0.3s background linear;
+}
+.js .section__form-input-file:hover {
+  background: #42A9ED;
+  color: #FFFFFF;
 }
 
 .js .isection__form-input-file:hover + .section__form-input-trigger,
 .js .isection__form-input-file:focus + .section__form-input-trigger,
 .js .section__form-input-trigger:hover,
 .js .section__form-input-trigger:focus {
-  background: #34495E;
-  color: #39D2B4;
+  background: #42A9ED;
+  color: #FFFFFF;
 }
 
 .file-return {
@@ -77,8 +109,15 @@
 }
 
 .section__form-upload-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   margin-bottom: 55px;
 }
@@ -100,14 +139,32 @@
 .section__form-button {
   width: 370px;
   height: 48px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   font-size: 15px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
   text-transform: uppercase;
+  transition: 0.3s border, background-color 0.3s, color 0.3s linear;
+}
+.section__form-button:hover {
+  border: 1px solid #FFFFFF;
+  background-color: #42A9ED;
+  color: #FFFFFF;
 }
 
 .section__form-input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 29px;
@@ -139,6 +196,28 @@
   background-image: url("../img/ring.webp");
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.eror {
+  background-color: red;
+  opacity: 0.4;
+  color: #FFFFFF;
+  border: 3px solid red;
+}
+.eror::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.eror::-moz-placeholder {
+  color: #FFFFFF;
+}
+.eror:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.eror::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.eror::placeholder {
+  color: #FFFFFF;
 }
 
 /* Useless styles, just for demo styles */

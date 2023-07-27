@@ -90,7 +90,8 @@ h1 {
   font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  transition: 0.3s color linear; }
   .header__nav-link:hover {
     color: #43ABF0; }
 
@@ -132,11 +133,25 @@ h1 {
   margin-right: 27px;
   color: #FFFFFF;
   background-color: #3E9CDC;
-  border: 1px solid #FFFFFF; }
+  border: 1px solid #FFFFFF;
+  transition: 0.9s background-color;
+  transition: 0.3s border linear;
+  transition: 0.3s color linear; }
+  .header__button--order:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #3E9CDC;
+    color: #3E9CDC; }
 
 .header__button--more {
   background-color: #FFFFFF;
-  border: 1px solid #6F6D7B; }
+  border: 1px solid #6F6D7B;
+  transition: 0.9s background-color;
+  transition: 0.3s border linear;
+  transition: 0.3s color linear; }
+  .header__button--more:hover {
+    background-color: #3E9CDC;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF; }
 
 .section {
   background-image: url("../img/bg_main.webp");
@@ -262,9 +277,17 @@ h1 {
   border: none;
   -webkit-transition: background .3s linear;
   -o-transition: background .3s linear;
-  transition: background .3s linear; }
+  transition: background .3s linear;
+  transition: color .3s linear; }
   .section__form-trigger span {
     font-size: 18px; }
+  .section__form-trigger:hover {
+    background: #42A9ED;
+    color: #FFFFFF; }
+  .section__form-trigger:focus {
+    background: #3D4050; }
+  .section__form-trigger:active {
+    background: #3D4050; }
 
 .section__form-custom-options {
   position: absolute;
@@ -284,6 +307,7 @@ h1 {
   z-index: 2; }
 
 .open__color {
+  color: #FFFFFF;
   background-color: #3d4050; }
 
 .section__form-select.open .section__form-custom-options {
@@ -298,7 +322,7 @@ h1 {
   padding: 12px 12px 12px 12px;
   font-size: 16px;
   font-weight: 400;
-  color: #A1A6B4;
+  color: #FFFFFF;
   line-height: 16px;
   cursor: pointer;
   -webkit-transition: all 0.5s;
@@ -358,6 +382,10 @@ h1 {
   background-color: #ff6536; }
 
 .scrollable {
+  overflow-y: scroll;
+  scrollbar-color: #0A4C95 #C2D2E4; }
+
+.scrollable {
   overflow: auto;
   width: 100%;
   height: 228px; }
@@ -404,7 +432,21 @@ h1 {
   width: 30.3%;
   max-height: 48px;
   padding-left: 10px;
-  font-size: 18px; }
+  font-size: 18px;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  transition: 0.3s background-color linear; }
+  .section__form-input::placeholder {
+    color: #272733;
+    transition: 0.3s color linear; }
+  .section__form-input:hover {
+    background-color: #42A9ED; }
+    .section__form-input:hover::placeholder {
+      color: #FFFFFF; }
+  .section__form-input:focus {
+    background-color: #3D4050; }
+  .section__form-input:active {
+    background-color: #3D4050; }
 
 .section__form-container {
   position: relative;
@@ -435,14 +477,18 @@ h1 {
   width: 370px;
   opacity: 0;
   padding: 13px 0;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.3s background linear; }
+  .js .section__form-input-file:hover {
+    background: #42A9ED;
+    color: #FFFFFF; }
 
 .js .isection__form-input-file:hover + .section__form-input-trigger,
 .js .isection__form-input-file:focus + .section__form-input-trigger,
 .js .section__form-input-trigger:hover,
 .js .section__form-input-trigger:focus {
-  background: #34495E;
-  color: #39D2B4; }
+  background: #42A9ED;
+  color: #FFFFFF; }
 
 .file-return {
   margin: 0; }
@@ -492,7 +538,15 @@ h1 {
   -ms-grid-row-align: center;
   align-self: center;
   font-size: 15px;
-  text-transform: uppercase; }
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  text-transform: uppercase;
+  transition: 0.3s border, background-color 0.3s,color .3s linear; }
+  .section__form-button:hover {
+    border: 1px solid #FFFFFF;
+    background-color: #42A9ED;
+    color: #FFFFFF; }
 
 .section__form-input-group {
   display: -webkit-box;
@@ -634,6 +688,10 @@ form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .footer__contacts a {
+    transition: color 0.3s linear; }
+    .footer__contacts a:hover {
+      color: #43ABF0; }
 
 .footer__payment {
   display: -webkit-box;
