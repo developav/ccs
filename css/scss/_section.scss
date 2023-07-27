@@ -38,6 +38,7 @@ $white: #FFFFFF;
     margin-bottom: 85px; 
 }
 .section__list-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     list-style-type: none;

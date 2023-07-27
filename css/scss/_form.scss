@@ -26,7 +26,6 @@
     height: 29px;
     transition: all .4s;
     cursor: pointer;
-    position: relative;
     svg {
       position: absolute;
       top: 14px;
@@ -126,6 +125,16 @@
   background-image: url('../img/ring.webp');
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.eror {
+  background-color: red;
+  opacity: 0.4;
+  color: #FFFFFF;
+  border: 3px solid red;
+  &::placeholder{
+    color: #FFFFFF;
+  }
 }
 
 /* Useless styles, just for demo styles */

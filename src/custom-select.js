@@ -1,5 +1,6 @@
 document.querySelector('.section__form-wrapper').addEventListener('click', function() {
     this.querySelector('.section__form-select').classList.toggle('open');
+    this.querySelector('.section__form-trigger').classList.toggle('open__color');
 })
 for (const option of document.querySelectorAll(".section__form-custom-option")) {
     option.addEventListener('click', function() {
