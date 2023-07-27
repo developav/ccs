@@ -36,8 +36,14 @@ $viewport_size: (
         height: 4px;
         position: absolute;
         left: 0;
-        transform-origin: center center;
-        transform: rotate(0deg);
+        -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
     &:after {
@@ -48,8 +54,14 @@ $viewport_size: (
         height: 4px;
         position: absolute;
         left: 0;
-        transform-origin: center center;
-        transform: rotate(0deg);
+        -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
 }
@@ -75,11 +87,15 @@ $viewport_size: (
     .header__nav-icon{
         &:after {
             bottom: 50%;
-            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
         }
         &:before {
             top: 50%;
-            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
         }
     }
 } 
@@ -93,12 +109,18 @@ $viewport_size: (
 	padding-top: 112px;
 	background: #3D4050;
 	z-index: 10;
+	-webkit-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
-	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	        transform: translateX(-100%);
 }
 
 .menu_shown .mobile.header__nav-list-mobile {
-	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	        transform: translateX(0);
 }
 
 .mobile .header__nav-link {
@@ -114,8 +136,15 @@ $viewport_size: (
   }
 
   .header__nav-list-desctop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }

@@ -1,161 +1,197 @@
 .section__form{
-    margin-bottom: 155px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  margin-bottom: 155px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .section__form-input {
-    width: 30.3%;
-    max-height: 48px;
-    padding-left: 10px;
-    font-size: 18px;
+  width: 30.3%;
+  max-height: 48px;
+  padding-left: 10px;
+  font-size: 18px;
 }
 .section__form-container {
-  position: relative;
-  width: 372px;
+position: relative;
+width: 372px;
 } 
 .js .section__form-input-trigger {
-    display: block;
-    padding: 15px 4px 3px 30px;
-    background: #FFFFFF;
-    color: #272733;
-    font-size: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 29px;
-    transition: all .4s;
-    cursor: pointer;
-    svg {
-      position: absolute;
-      top: 14px;
-      left: 96px;
-  }
+  display: block;
+  padding: 15px 4px 3px 30px;
+  background: #FFFFFF;
+  color: #272733;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 29px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+  svg {
+    position: absolute;
+    top: 14px;
+    left: 96px;
+}
 }
 .js .section__form-input-file{
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 370px;
-    opacity: 0;
-    padding: 13px 0;
-    cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 370px;
+  opacity: 0;
+  padding: 13px 0;
+  cursor: pointer;
 }
 .js .isection__form-input-file:hover + .section__form-input-trigger,
 .js .isection__form-input-file:focus + .section__form-input-trigger,
 .js .section__form-input-trigger:hover,
 .js .section__form-input-trigger:focus {
-  background: #34495E;
-  color: #39D2B4;
+background: #34495E;
+color: #39D2B4;
 }
 
 .file-return {
-  margin: 0;
+margin: 0;
 }
 .file-return:not(:empty) {
-  margin: 1em 0;
+margin: 1em 0;
 }
 .js .file-return {
-  font-style: italic;
-  font-size: .9em;
-  font-weight: bold;
+font-style: italic;
+font-size: .9em;
+font-weight: bold;
 }
 .js .file-return:not(:empty):before {
-  content: "ПРИКРЕПИТЬ ФАЙЛ";
-  font-style: normal;
-  font-weight: normal;
+content: "ПРИКРЕПИТЬ ФАЙЛ";
+font-style: normal;
+font-weight: normal;
 }
 
 .section__form-upload-block {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 55px;
 }
 .section__form-progress {
-    position: relative;
-    width: 774px;
-    margin-right: 27px;
-    &::before {
-        content: 'Sed ut perspiciatis, unde omnis iste natus';
-        position: absolute;
-        top: -41px;
-        left: 0px;
-        font-size: 18px;
-        font-family: lato;
-    }
+  position: relative;
+  width: 774px;
+  margin-right: 27px;
+  &::before {
+      content: 'Sed ut perspiciatis, unde omnis iste natus';
+      position: absolute;
+      top: -41px;
+      left: 0px;
+      font-size: 18px;
+      font-family: lato;
+  }
 }
 .section__form-button {
-    width: 370px;
-    height: 48px;
-    align-self: center;
-    font-size: 15px;
-    text-transform: uppercase;
+  width: 370px;
+  height: 48px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .section__form-input-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 29px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+width: 100%;
+margin-bottom: 29px;
 }
 #myProgress {
-  position: relative;
-  margin-right: auto;
-  width: 66%;
-  height: 7px;
-  background-color: #FFFFFF;
-  border-radius: 10px;
+position: relative;
+margin-right: auto;
+width: 66%;
+height: 7px;
+background-color: #FFFFFF;
+border-radius: 10px;
 }
 
 .section__form-percent {
-  position: absolute;
-  right: 1px;
-  top: -42px;
+position: absolute;
+right: 1px;
+top: -42px;
 }
 #myBar {
-  background-repeat: no-repeat;
-  width: 1%;
-  content: '';
-  position: absolute;
-  top: -10px;
-  height: 30px;
-  width: 30px;
-  background-image: url('../img/ring.webp');
-  background-repeat: no-repeat;
-  background-position: right;
+background-repeat: no-repeat;
+width: 1%;
+content: '';
+position: absolute;
+top: -10px;
+height: 30px;
+width: 30px;
+background-image: url('../img/ring.webp');
+background-repeat: no-repeat;
+background-position: right;
 }
 
 .eror {
-  background-color: red;
-  opacity: 0.4;
+background-color: red;
+opacity: 0.4;
+color: #FFFFFF;
+border: 3px solid red;
+&::-webkit-input-placeholder{
   color: #FFFFFF;
-  border: 3px solid red;
-  &::placeholder{
-    color: #FFFFFF;
-  }
+}
+&::-moz-placeholder{
+  color: #FFFFFF;
+}
+&:-ms-input-placeholder{
+  color: #FFFFFF;
+}
+&::-ms-input-placeholder{
+  color: #FFFFFF;
+}
+&::placeholder{
+  color: #FFFFFF;
+}
 }
 
 /* Useless styles, just for demo styles */
 
 form {
-  width: 225px;
-  margin: 0 auto;
-  text-align:center;
+width: 225px;
+margin: 0 auto;
+text-align:center;
 }
 .txtcenter {
-  margin-top: 4em;
-  font-size: .9em;
-  text-align: center;
-  color: #aaa;
+margin-top: 4em;
+font-size: .9em;
+text-align: center;
+color: #aaa;
 }
 .copy {
-  margin-top: 2em;
+margin-top: 2em;
 }
 .copy a {
-  text-decoration: none;
-  color: #1ABC9C;
+text-decoration: none;
+color: #1ABC9C;
 }  
-
 
