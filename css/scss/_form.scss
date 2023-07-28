@@ -132,15 +132,16 @@ font-weight: normal;
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 15px;
-  background-color: #FFFFFF;
+  background-color: #42A9ED;
+  color: #FFFFFF;
   border-radius: 3px;
   border: 1px solid #FFFFFF;
   text-transform: uppercase;
   transition: 0.3s border, background-color 0.3s,color .3s linear;
   &:hover{
-    border: 1px solid #FFFFFF;
-    background-color: #42A9ED;
-    color: #FFFFFF;
+    border: 1px solid #42A9ED;
+    background-color: #FFFFFF;
+    color: #272733;
   }
 }
 

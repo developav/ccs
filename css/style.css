@@ -134,9 +134,7 @@ h1 {
   color: #FFFFFF;
   background-color: #3E9CDC;
   border: 1px solid #FFFFFF;
-  transition: 0.9s background-color;
-  transition: 0.3s border linear;
-  transition: 0.3s color linear; }
+  transition: 0.3s background-color, 0.3s border, 0.3s color linear; }
   .header__button--order:hover {
     background-color: #FFFFFF;
     border: 1px solid #3E9CDC;
@@ -145,9 +143,7 @@ h1 {
 .header__button--more {
   background-color: #FFFFFF;
   border: 1px solid #6F6D7B;
-  transition: 0.9s background-color;
-  transition: 0.3s border linear;
-  transition: 0.3s color linear; }
+  transition: 0.3s background-color, 0.3s border, 0.3s color linear; }
   .header__button--more:hover {
     background-color: #3E9CDC;
     border: 1px solid #FFFFFF;
@@ -538,15 +534,16 @@ h1 {
   -ms-grid-row-align: center;
   align-self: center;
   font-size: 15px;
-  background-color: #FFFFFF;
+  background-color: #42A9ED;
+  color: #FFFFFF;
   border-radius: 3px;
   border: 1px solid #FFFFFF;
   text-transform: uppercase;
   transition: 0.3s border, background-color 0.3s,color .3s linear; }
   .section__form-button:hover {
-    border: 1px solid #FFFFFF;
-    background-color: #42A9ED;
-    color: #FFFFFF; }
+    border: 1px solid #42A9ED;
+    background-color: #FFFFFF;
+    color: #272733; }
 
 .section__form-input-group {
   display: -webkit-box;

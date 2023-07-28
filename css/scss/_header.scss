@@ -117,9 +117,7 @@ $white: #FFFFFF;
     color: $white;
     background-color: $button_color;
     border: 1px solid $white;
-    transition: 0.9s background-color;
-    transition: 0.3s border linear;
-    transition: 0.3s color linear;
+    transition: 0.3s background-color, 0.3s border, 0.3s color linear;
     &:hover {
         background-color: $white;
         border: 1px solid $button_color;
@@ -129,9 +127,7 @@ $white: #FFFFFF;
 .header__button--more {
     background-color: $white;
     border: 1px solid #6F6D7B;
-    transition: 0.9s background-color;
-    transition: 0.3s border linear;
-    transition: 0.3s color linear;
+    transition: 0.3s background-color, 0.3s border, 0.3s color linear;
     &:hover {
         background-color: $button_color;
         border: 1px solid $white;
