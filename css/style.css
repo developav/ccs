@@ -382,9 +382,7 @@ h1 {
   scrollbar-color: #0A4C95 #C2D2E4; }
 
 #myScrollableDiv {
-  width: 369px;
   height: 228px;
-  border: none;
   background: #272733; }
 
 .os-scrollbar {
