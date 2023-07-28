@@ -21,28 +21,15 @@ window.addEventListener('click', function(e) {
 
 document.addEventListener("DOMContentLoaded", function() {
     OverlayScrollbars(document.getElementById("myScrollableDiv"), {
-            paddingAbsolute: false,
-            showNativeOverlaidScrollbars: true,
-            scrollbarBackgroundColor: "#ffffff",
-            scrollbarThumbColor: "#000000",
-            scrollbarColor: "red ,#ffffff",
-            update: {
-              elementEvents: [['img', 'load']],
-              debounce: [0, 33],
-              attributes: null,
-              ignoreMutation: null,
-            },
-            overflow: {
-              y: 'scroll'
-            },
-            scrollbars: {
-              theme: 'os-theme-dark',
-              visibility: 'auto',
-              autoHide: 'never',
-              autoHideDelay: 1300,
-              dragScroll: true,
-              clickScroll: false,
-              pointers: ['mouse', 'touch', 'pen'],
-            },
+        autoUpdate: true,
+        normalizeRTL: true,
+        paddingAbsolute: true,
+        scrollbars: 'native',
+        scrollbars: {
+            visibility: 'auto',
+            autoHide: 'never',
+            autoHideDelay: 1300,
+          }, 
     });
   });
+ 
