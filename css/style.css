@@ -388,6 +388,18 @@ h1 {
   height: 228px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.3); }
+  .scrollable::-webkit-scrollbar {
+    width: 7px;
+    height: 53px; }
+  .scrollable::-webkit-scrollbar-button {
+    display: none;
+    background: #ccc; }
+  .scrollable::-webkit-scrollbar-track-piece {
+    background: #3D4050; }
+  .scrollable::-webkit-scrollbar-thumb {
+    height: 15px;
+    border-radius: 25px;
+    background: #3E9CDC; }
   .scrollable select {
     -webkit-appearance: none;
     -moz-appearance: none;

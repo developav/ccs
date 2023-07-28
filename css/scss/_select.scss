@@ -188,6 +188,22 @@ background-color: #ff6536;
   height: 228px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 53px;
+  }
+  &::-webkit-scrollbar-button {
+      display: none;
+      background: #ccc
+  }
+  &::-webkit-scrollbar-track-piece {
+      background: #3D4050
+  }
+  &::-webkit-scrollbar-thumb {
+      height: 15px;
+      border-radius: 25px;
+      background: #3E9CDC;
+  }
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
