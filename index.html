@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"/>
-    <link rel="stylesheet" href="css/style.css">
+   
+    <script src="src/OverlayScrollbars.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/OverlayScrollbars.css">
     <title>Lorem ipsum</title>
 </head>
 <body>
@@ -102,15 +105,13 @@
                     </ul>
                     <form id="form" class="section__form" action="#">
                         <div class="section__form-input-group">
-                           
                             <div class="section__form-wrapper" tabindex="0">
                                 <div class="section__form-select">
                                     <div class="section__form-trigger"><span>Выберите тип системы</span>
                                         <div class="section__form-arrow"></div>
                                     </div>
-                                    <div class="section__form-custom-options">
-                                        <div class="scrollable">
-                                            <select id="select"  name="specialization" size="6" multiple="multiple"  autocomplete="off">
+                                    <div id="myScrollableDiv" class="section__form-custom-options">
+                                            <select name="specialization" size="13" multiple="multiple"  autocomplete="off">
                                                 <option class="section__form-custom-option selected" selected="selected" value="Sed ut perspiciatis" selected>Sed ut perspiciatis</option>
                                                 <option class="section__form-custom-option" value="Sed ut perspiciatis">Sed ut perspiciatis</option>
                                                 <option class="section__form-custom-option" value="Nemo enim ipsam">Nemo enim ipsam</option>
@@ -119,8 +120,12 @@
                                                 <option class="section__form-custom-option" value="Itaque earum rerum">Itaque earum rerum</option>
                                                 <option class="section__form-custom-option" value="Et harum quidem">Et harum quidem</option>
                                                 <option class="section__form-custom-option" value="Temporibus autem">Temporibus autem</option>
+                                                <option class="section__form-custom-option" value="Et harum quidem">Et harum quidem</option>
+                                                <option class="section__form-custom-option" value="Temporibus autem">Temporibus autem</option>
+                                                <option class="section__form-custom-option" value="Itaque earum rerum">Itaque earum rerum</option>
+                                                <option class="section__form-custom-option" value="Et harum quidem">Et harum quidem</option>
+                                                <option class="section__form-custom-option" value="Temporibus autem">Temporibus autem</option>
                                             </select>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -193,7 +198,8 @@
             </div>
         </div>
     </footer>
-    <script src="src/custom-select.js"></script>
+
+    <script type="module" src="src/custom-select.js"></script>
     <script src="src/file.js"></script>
     <script src="src/burger.js"></script>
     <script src="src/validate.js"></script>
