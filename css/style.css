@@ -385,31 +385,31 @@ h1 {
 .scrollable {
   overflow: auto;
   width: 100%;
-  height: 228px; }
+  height: 228px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3); }
   .scrollable select {
     width: 100%;
     height: 228px;
     border: none;
     background: #272733; }
+    .scrollable select::-webkit-scrollbar {
+      width: 7px;
+      height: 53px; }
+    .scrollable select::-webkit-scrollbar-button {
+      display: none;
+      background: #ccc; }
+    .scrollable select::-webkit-scrollbar-track-piece {
+      background: #3D4050; }
+    .scrollable select::-webkit-scrollbar-thumb {
+      height: 15px;
+      border-radius: 25px;
+      background: #3E9CDC; }
 
 .selected {
   background-color: inherit; }
-
-::-webkit-scrollbar {
-  width: 7px;
-  height: 53px; }
-
-::-webkit-scrollbar-button {
-  display: none;
-  background: #ccc; }
-
-::-webkit-scrollbar-track-piece {
-  background: #3D4050; }
-
-::-webkit-scrollbar-thumb {
-  height: 15px;
-  border-radius: 25px;
-  background: #3E9CDC; }
 
 .section__form {
   margin-bottom: 155px;
