@@ -270,6 +270,7 @@ h1 {
   line-height: 16px;
   background: #E6E8EC;
   cursor: pointer;
+  border-radius: 3px;
   border: none;
   -webkit-transition: background .3s linear;
   -o-transition: background .3s linear;
@@ -378,7 +379,7 @@ h1 {
   background-color: #ff6536; }
 
 .scrollable {
-  overflow-y: scroll;
+  scrollbar-width: 7px;
   scrollbar-color: #0A4C95 #C2D2E4; }
 
 .scrollable {
@@ -879,7 +880,8 @@ form {
     .section__form-input-group .section__form-wrapper {
       width: 65%;
       height: 48px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      border-radius: 3px; }
     .section__form-input-group .section__form-input {
       width: 63.5%;
       height: 48px;
@@ -957,7 +959,10 @@ form {
       margin-bottom: 20px; } }
 @media (max-width: 768px) {
   .container {
-    width: 575px; } }
+    width: 575px; }
+
+  .section__form-input-group .section__form-wrapper {
+    width: 67%; } }
 @media (max-width: 575px) {
   .container {
     max-width: 390px; }

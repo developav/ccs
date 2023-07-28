@@ -37,6 +37,7 @@
   line-height: 16px;
   background: #E6E8EC;
   cursor: pointer;
+  border-radius: 3px;
   border: none;
   -webkit-transition: background .3s linear;
   -o-transition: background .3s linear;
@@ -178,7 +179,7 @@ border: rgb(48, 10, 10);
 background-color: #ff6536;
 }
 .scrollable{
-  overflow-y: scroll;
+  scrollbar-width: 7px;
   scrollbar-color: #0A4C95 #C2D2E4;
 }
 .scrollable{

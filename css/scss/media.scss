@@ -39,6 +39,7 @@ $breackpoint-mobile-small: 400px;
             width: 65%;
             height: 48px;
             margin-bottom: 50px; 
+            border-radius: 3px;
         }
         .section__form-input {
             width: 63.5%;
@@ -137,6 +138,11 @@ $breackpoint-mobile-small: 400px;
     .container {
         width: 575px;
     }
+    .section__form-input-group {
+        .section__form-wrapper {
+            width: 67%;
+        }
+}
 }
 @media (max-width: $breakpoint-mobile ){
     .container {
