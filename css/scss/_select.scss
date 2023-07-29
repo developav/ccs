@@ -196,7 +196,11 @@ background-color: #ff6536;
 .scrollbar-track {
   background-color: #e21111;
 }
+
 .scrollable{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   overflow: auto;
   width: 100%;
   height: 228px;
@@ -219,7 +223,9 @@ background-color: #ff6536;
       background: #3E9CDC;
   }
   select {
-    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
     width: 100%;
     height: 228px;
     border: none;
@@ -244,7 +250,9 @@ background-color: #ff6536;
 }
 .os-content {
   select {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     overflow-y: hidden;
     width: 100%;
     background: #272732;
@@ -254,4 +262,3 @@ background-color: #ff6536;
 .selected {
 background-color: inherit;
 }
-

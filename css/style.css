@@ -396,6 +396,9 @@ h1 {
   background-color: #e21111; }
 
 .scrollable {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   overflow: auto;
   width: 100%;
   height: 228px;
@@ -414,6 +417,9 @@ h1 {
     border-radius: 25px;
     background: #3E9CDC; }
   .scrollable select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 100%;
     height: 228px;
     border: none;
@@ -432,6 +438,8 @@ h1 {
       background: #3E9CDC; }
 
 .os-content select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   overflow-y: hidden;
   width: 100%;

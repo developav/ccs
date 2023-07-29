@@ -17,7 +17,6 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #121723;
 }
 
 .section__form-trigger {
@@ -39,6 +38,7 @@
   line-height: 16px;
   background: #E6E8EC;
   cursor: pointer;
+  border-radius: 3px;
   border: none;
   -webkit-transition: background 0.3s linear;
   -o-transition: background 0.3s linear;
@@ -65,7 +65,7 @@
   top: 100%;
   left: -1px;
   right: 0;
-  border-radius: 10px;
+  border-radius: 3px;
   border-top: 0;
   background: #3D4050;
   -webkit-transition: all 0.5s;
@@ -165,42 +165,90 @@
 }
 
 .scrollable {
-  overflow-y: scroll;
+  scrollbar-width: 7px;
   scrollbar-color: #0A4C95 #C2D2E4;
 }
 
+#myScrollableDiv {
+  height: 228px;
+  background: #272733;
+}
+
+.os-scrollbar {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.os-scrollbar-handle {
+  background-color: red;
+}
+
+.scrollbar-track {
+  background-color: #e21111;
+}
+
 .scrollable {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   overflow: auto;
   width: 100%;
   height: 228px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.scrollable::-webkit-scrollbar {
+  width: 7px;
+  height: 53px;
+}
+.scrollable::-webkit-scrollbar-button {
+  display: none;
+  background: #ccc;
+}
+.scrollable::-webkit-scrollbar-track-piece {
+  background: #3D4050;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  height: 15px;
+  border-radius: 25px;
+  background: #3E9CDC;
 }
 .scrollable select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
   height: 228px;
   border: none;
   background: #272733;
 }
-
-.selected {
-  background-color: inherit;
-}
-
-::-webkit-scrollbar {
+.scrollable select::-webkit-scrollbar {
   width: 7px;
   height: 53px;
 }
-
-::-webkit-scrollbar-button {
+.scrollable select::-webkit-scrollbar-button {
   display: none;
   background: #ccc;
 }
-
-::-webkit-scrollbar-track-piece {
+.scrollable select::-webkit-scrollbar-track-piece {
   background: #3D4050;
 }
-
-::-webkit-scrollbar-thumb {
+.scrollable select::-webkit-scrollbar-thumb {
   height: 15px;
   border-radius: 25px;
   background: #3E9CDC;
+}
+
+.os-content select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow-y: hidden;
+  width: 100%;
+  background: #272732;
+  border: none;
+}
+
+.selected {
+  background-color: inherit;
 }
