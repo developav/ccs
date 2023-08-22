@@ -99,11 +99,11 @@ h1 {
   max-width: 800px; }
 
 .header__head {
-  margin-bottom: 88px;
   padding-top: 204px;
+  padding-bottom: 88px;
   font-size: 48px;
   text-transform: uppercase; }
-  .header__head span {
+  .header__head .header__head-color {
     color: #3E9CDC; }
 
 .header__text {
@@ -123,8 +123,8 @@ h1 {
   line-height: 29px; }
 
 .header__button {
-  width: 183px;
-  height: 43px;
+  min-width: 183px;
+  min-height: 43px;
   font-size: 13px;
   text-transform: uppercase;
   border-radius: 5px; }
@@ -165,7 +165,7 @@ h1 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 118px;
+  padding: 118px 0;
   color: #FFFFFF; }
   .section__block-description .section__head {
     margin: 0;
@@ -450,7 +450,6 @@ h1 {
   background-color: inherit; }
 
 .section__form {
-  margin-bottom: 155px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

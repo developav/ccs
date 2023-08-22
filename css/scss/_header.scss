@@ -81,11 +81,11 @@ $white: #FFFFFF;
     max-width: 800px;
 }
 .header__head {
-    margin-bottom: 88px;
     padding-top: 204px;
+    padding-bottom: 88px;
     font-size: 48px;
     text-transform: uppercase;
-    span {
+    .header__head-color {
         color: #3E9CDC;
     }
 }
@@ -106,8 +106,8 @@ $white: #FFFFFF;
     line-height: 29px;
 }
 .header__button {
-    width: 183px;
-    height: 43px;
+    min-width: 183px;
+    min-height: 43px;
     font-size: 13px;
     text-transform: uppercase;
     border-radius: 5px;

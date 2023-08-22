@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         autoUpdate: true,
         normalizeRTL: true,
         paddingAbsolute: true,
-        scrollbars: 'native',
+        scrollbars: 'overlay',
         scrollbars: {
             visibility: 'auto',
             autoHide: 'never',
